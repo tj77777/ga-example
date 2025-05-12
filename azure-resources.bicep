@@ -1,6 +1,6 @@
-param location string = 'westus3'
+param location string = resourceGroup().location
 
-param storageName string = 'ga-storage'
+param storageName string = 'xyzwgastorage'
 
 
 resource storageaccount 'Microsoft.Storage/storageAccounts@2024-01-01' = {
