@@ -1,4 +1,4 @@
-param namePrefix string = 'azure-bicep'
+param namePrefix string = 'tjay'
 param location string = resourceGroup().location
 param sku string = 'F1'
 
