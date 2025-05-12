@@ -8,7 +8,6 @@ param dockerImageTag string = 'latest'
 targetScope = 'resourceGroup'
 
 module storage 'modules/storage.bicep'={
-  name:namePrefix
    params:{
      location: location
      namePrefix: namePrefix
@@ -26,10 +25,10 @@ module appDeploy 'modules/servicePlan.bicep'={
 module webapp 'modules/webapp.bicep'={
    params:{
      appPlandId: appDeploy.outputs.appid
-      dockerImage: dockerImage
-      dockerImageTag: dockerImageTag
-      location: location
-       namePrefix: namePrefix
+     dockerImage: dockerImage
+     dockerImageTag: dockerImageTag
+     location: location
+     namePrefix: namePrefix
    }
 }
 

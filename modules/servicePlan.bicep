@@ -8,7 +8,6 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2024-04-01' = {
   kind: 'ubuntu'
   sku: {
     name: sku
-  
   }
 }
 
