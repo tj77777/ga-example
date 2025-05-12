@@ -10,9 +10,7 @@ param dockerImageTag string
 resource webApplication 'Microsoft.Web/sites@2021-01-15' = {
   name: '${namePrefix}-webapp'
   location: location
-  tags: {
-    'hidden-related:${resourceGroup().id}/providers/Microsoft.Web/serverfarms/appServicePlan': 'Resource'
-  }
+  
   properties: {
     serverFarmId: appPlandId 
      siteConfig:{
