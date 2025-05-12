@@ -3,7 +3,7 @@ param namePrefix string
 
 
 resource storageaccount 'Microsoft.Storage/storageAccounts@2024-01-01' = {
-  name: '${namePrefix}-storageaccount'
+  name: '${namePrefix}xysstorageaccount'
   location: location
   kind: 'StorageV2'
   sku: {
